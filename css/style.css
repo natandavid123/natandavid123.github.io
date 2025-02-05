@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Nunito Sans", serif;
+}
+
+/* 
+menu 
+*/
+.wrapper{
+    width: 1024px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+nav{
+    background-color: #222831;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav > .wrapper{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.menu{
+    width: 50%;
+}
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.button-menu{
+    padding: 20px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.button-menu:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* 
+hero / jumbotron
+*/
+header{
+    background: url("../images/bg-header.jpeg");
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    letter-spacing: 5px;
+    text-shadow: 0 0 5px black;
+}
+
+.header-opacity{
+    background-color: #222831;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.header-jumbotron{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-jumbotron h4{
+    color: yellow;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.header-jumbotron h5{
+    color: white;
+    margin: 0;
+    padding: 5px;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+}
+
+.header-jumbotron p{
+    font-size: 15px;
+    margin: 0px 5px 20px 5px;
+    padding: 5px;
+    color: white;
+}
+
+.header-jumbotron a{
+    text-decoration: none;
+    color: black;
+    text-shadow: none;
+}
+
+.button{
+    background-color: yellow;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+.button-xl{
+    font-size: 1.4rem;
+    padding: 20px;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+
+/* 
+statistic 
+*/
+#statistic{
+    background-color: #393e46;
+    color: white;
+}
+
+#statistic .wrapper{
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#statistic .wrapper div{
+    text-align: center;
+}
+
+#statistic .wrapper div p{
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+#statistic .wrapper div p i{
+    margin-right: 10px;
+}
+
+#statistic .wrapper div small{
+    font-size: 1.2rem;
+}
+
+
+/* 
+portofolio 
+*/
+#portofolio{
+    background-color: #222831;
+    color: white;
+}
+
+#portofolio .wrapper{
+    padding: 50px 0px 50px 0px;
+}
+
+#portofolio .wrapper h4{
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 0;
+    padding: 0;
+}
+
+#portofolio .wrapper h4 span{
+    color: yellow;
+}
+
+#portofolio .wrapper p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 50px;
+}
+
+.grid .item{
+    border: 1px solid gray;
+    background-color: #393e46;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid .item img{
+    width: 90%;
+    height: 350px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+
+.grid .item h3{
+    font-size: 1.7rem;
+}
+
+.grid .item p{
+    font-size: 1.2rem;
+}
+
+.button-project{
+    width: 70%;
+    background-color: yellow;
+    margin-bottom: 50px;
+    margin-left: 65px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.button-project:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+
+/* 
+About me / My CV
+*/
+#about-me{
+    background-color: #EEEEEE;
+    color: #333;
+}
+
+#about-me .wrapper{
+    padding: 50px 0px 50px 0px;
+}
+
+#about-me .wrapper h4{
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 0;
+    padding: 0;
+}
+
+#about-me .wrapper p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+#about-me .wrapper .frame{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about-me .wrapper .frame .foto{
+    width: 30%;
+}
+
+#about-me .wrapper .frame .foto img{
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+#about-me .wrapper .frame .desc{
+    width: 70%;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#about-me .wrapper div .desc p{
+    margin: 0px 0px 10px 0px;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#about-me .wrapper div .desc .social{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+#about-me .wrapper div .desc .social a{
+    color: #3674B5;
+    margin-top: 20px;
+}
+
+#about-me .wrapper div .desc .social p{
+    margin-top: 20px;
+    margin-right: 40px;
+    font-size: 15px;
+}
+
+.button-cv{
+    width: 70%;
+    background-color: yellow;
+    margin-left: 170px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.button-cv:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+/* 
+Copyright
+*/
+
+footer{
+    background-color: #222831;
+    color: white;
+    text-align: center;
+}
+
+footer .wrapper{
+    padding: 30px 0px 30px 0px;
+}
+
+
+/* 
+responsive
+*/
+@media only screen and (max-width: 1024px){
+    .wrapper{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    #statistic .wrapper div p{
+        font-size: 1.1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    #statistic .wrapper div small{
+        font-size: 0.8rem;
+    }
+
+    .grid{
+        grid-template-columns: 100%;
+    }
+
+    .grid .item p{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .menu{
+        width: 60%;
+    }
+    .header-jumbotron h4{
+        font-size: 1rem;
+    }
+
+    .header-jumbotron h5{
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .button{
+        padding: 5px;
+    }
+
+    .button-xl{
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 600px){
+    #about-me .wrapper .frame{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #about-me .wrapper .frame .foto{
+        width: 50%;
+    }
+
+    #about-me .wrapper .frame .foto img{
+        max-width: 100%;
+    }
+
+    #about-me .wrapper .frame .desc{
+        width: 70%;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    #about-me .wrapper .frame .desc p{
+        font-size: 10px;
+    }
+
+    #about-me .wrapper div .desc p{
+        margin: 0px 0px 5px 0px;
+        line-height: 1rem;
+        margin-bottom: 20px;
+    }
+
+    #about-me .wrapper div .desc .social{
+        margin: auto;
+        width: 100%;
+    }
+
+    #about-me .wrapper div .desc .button-cv{
+        margin-left: 90px;
+    }
+
+    #about-me .wrapper div .desc .social p{
+        font-size: 15px;
+    }
+
+}
